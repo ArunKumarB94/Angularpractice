@@ -1,0 +1,45 @@
+﻿<!DOCTYPE html>
+<html ng-app="myModule3">
+<head>
+    <meta charset="utf-8" />
+    <title>Angularjs To convert array to table</title>
+    <script src="Scripts/angular.js"></script>
+    <script src="Scripts/script3.js"></script>
+</head>
+<body>
+    <!--<div ng-controller="MyController3">
+        <table>
+            <thead>
+                <tr>
+                    <th>FirstName</th>
+                    <th>LastName</th>
+                    <th>Gender</th>
+                    <th>Salary</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr ng-repeat="emp in employees">
+                    <td>{{emp.firstName}}</td>
+                    <td>{{emp.lastName}}</td>
+                    <td>{{emp.gender}}</td>
+                    <td>{{emp.salary}}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>-->
+    <div ng-controller="myController4">
+        <ul>
+            <li ng-repeat="country in countries">
+                {{country.name}} - Index={{$index}}
+                <ul>
+                    <li ng-repeat="city in country.cities">
+                        {{city.name}} - Parent Index={{$parent.$index}}, Index={{$index}}
+                    </li>
+                </ul>
+                    
+            </li>
+        </ul>
+    </div>
+
+</body>
+</html>

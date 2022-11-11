@@ -1,0 +1,33 @@
+﻿<!DOCTYPE html>
+<html ng-app="MyModule1">
+<head>
+    <title> AngularJs Practice</title>
+    <script src="Scripts/angular.js"></script>
+    <script src="Scripts/script.js"></script>
+</head>
+<body>
+        <!--<div>
+        FirstName:{{employees.firstName}}
+    </div>
+    <div>
+        lastName:{{employees.lastName}}
+    </div>
+    <div>
+        Gender:{{employees.gender}}
+    </div>-->
+    <div ng-controller="myController1">
+        <div>
+            Country:{{country.name}}
+        </div>
+        <div>
+            Capital:{{country.capital}}
+        </div>
+        <div>
+            <img ng-src="{{country.flag}}"
+                 alt="{{country.name +'Flag'}}"
+                 style="height:200px; width:400px" />
+        </div>
+    </div>
+
+</body>
+</html>
