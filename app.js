@@ -6,30 +6,30 @@
     
 // }]);
 
-var myApp = angular.module('myApp',['ngMessages']);
+// var myApp = angular.module('myApp',['ngMessages']);
 
-myApp.controller('mainController',function($scope, $log, $filter){
-    $scope.name = 'Hi';
-    $scope.occupation = 'ASE';
-    $scope.fname = $filter('uppercase')($scope.name);
+// myApp.controller('mainController',function($scope, $log, $filter){
+//     $scope.name = 'Hi';
+//     $scope.occupation = 'ASE';
+//     $scope.fname = $filter('uppercase')($scope.name);
 
-    $log.info($scope.fname);
-    $scope.getname = function() {
-        return 'John Doe';
-    }
+//     $log.info($scope.fname);
+//     $scope.getname = function() {
+//         return 'John Doe';
+//     }
 
-    $scope.getname();
+//     $scope.getname();
 
-    console.log($scope);
+//     console.log($scope);
     
-});
+// });
 
 
-var sp = function searchPeople(fname, lname, height, age){
-    return 'Jane';
-}
-console.log(sp);
-console.log(angular.injector().annotate(sp));
+// var sp = function searchPeople(fname, lname, height, age){
+//     return 'Jane';
+// }
+// console.log(sp);
+// console.log(angular.injector().annotate(sp));
 // var Person = function(firstName, lastName){
 //     this.firstName = firstName;
 //     this.lastName = lastName;
@@ -46,3 +46,4 @@ console.log(angular.injector().annotate(sp));
 // }
 // var john = new Person('John', 'Joe');
 // logPerson(john);
+
